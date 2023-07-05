@@ -1,5 +1,3 @@
-package ecs;
-
 public class ShapesConst {
 
 	public static void main(String[] args) {
