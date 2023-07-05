@@ -8,15 +8,11 @@ public class WordCount {
 		
 		Scanner scan = new Scanner(System.in);
 		String st = scan.nextLine();
-		String[] charset = st.split(" ");
-		int count = 0;
-		for(int j =1; j<charset.length;j++) {
-			if (charset[j-1].equals(" ") && charset[j].equals(" ") ) {
-				continue;
-			}else
-				count++;
-		}
-		System.out.println(count);
+		String[] charset = st.split("\\s+");
+		if (charset[0].isBlank())
+			System.out.println(charset.length-1);
+		else
+			System.out.println(charset.length);
 		
 		scan.close();
 	}
