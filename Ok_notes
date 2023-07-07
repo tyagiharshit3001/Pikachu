@@ -1,0 +1,65 @@
+Package: 
+	-> Compile file from main folder then move the class file into package folder name and then continue executing.
+	-> Bulk import using '*' example import java.util.*;
+	-> Static import --> use static keyword after import to access static class variables and methods
+
+JUnit: 
+	-> Junit testing each unit of code to ensure it is working as per expectation/specification
+	-> In Object oriented language written application is a unit or a class.
+	-> Each class's each method's behaviour should be tested.
+	-> JUnit is Unit testing framework for java.
+Standard Levels of Testing:
+	-> Unit Testing 
+	-> Integration testing
+	-> System Testing
+	-> User Acceptance Testing
+	
+JUnit library/API should be included in out application.(Only for Java so JAR files need to be included)
+JAR archieve multiple class files compressed and ziped together in a single file. 	
+
+Annotations
+@BeforeEach - Will make the resources available for @Test. It will be executed before every @Test annotated method.
+@AfterEach - Will release the resource after each @Test. It will be executed after every @Test annotated method.
+@BeforeAll - Executes @Test annotated method only once before all the test method executes. Methods and instance need to be static
+@AfterAll - Executes @Test annotated method only once after all the test method executes. Methods and instance need to be static
+
+
+Maven: It is a project build and management tool.
+Maven maintains third party libraries in its repository called remote repositoriesand also local repositories.
+In pom.xml we have configure groupId, artifactId and version so that maven can pull/download specified libraries
+Project Object Model- consists of configurations/dependencies of maven project.
+<dependencies>
+    [...]
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.9.1</version>
+        <scope>test</scope>
+    </dependency>
+    [...]
+</dependencies>
+
+
+Inheritance - A class aquaring the behaviour and features for another class;
+Features can not be inherited: 	private members
+								Static members
+								constructors
+
+super(); this calls super class's default constructor
+this.y = y; and call to super class constructor should be the very first
+If child class and parent class have same member then the compiler first search for the child class
+if not found then go to parent class.
+"super" is also an implicit reference variable similar to this but it refers only the super class part.
+'super' should be used inside within the sub-class.
+
+
+
+
+
+
+
+
+
+
+
+
